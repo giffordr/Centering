@@ -27,6 +27,7 @@ import Events from '../events/Events';
 import About from '../about/About';
 import Description from '../description/Description';
 import Gallery from '../gallery/Gallery';
+import Details from '../details/Details';
 
 
 /**
@@ -111,6 +112,7 @@ class States extends React.Component {
     <Route path="/events" component={Events} />
     <Route path="/about" component={About} />
     <Route path="/gallery" component={Gallery} />
+    <Route path="/details" component={Details} /> 
     <Route path="/" component={Description} />
     </Switch>
 </HashRouter>

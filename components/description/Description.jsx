@@ -105,7 +105,7 @@ class Description extends React.Component {
 render() {
   
   return (
-    <div className="App">
+    <div className="Body">
     <p> 
       <div className = "Description">
         <Typography variant="h6" align="center"> 
@@ -138,6 +138,7 @@ render() {
         </Typography>
       </div>
     </p>
+    
     <p> 
       <div >
         <Typography variant="body"> 

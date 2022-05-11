@@ -1,6 +1,9 @@
 .App {
   text-align: left;
 }
+.Body{
+	margin:15px;
+}
 
 .App-logo {
   height: 55vmin;

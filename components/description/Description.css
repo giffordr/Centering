@@ -49,6 +49,18 @@ button {
   color:white;
 }
 
+.Title {
+	font-style: italic;
+	
+}
+.Description{
+	align: center;
+}
+
+.MuiTypography-h6{
+	line-height: 60%
+}
+
 a:link { text-decoration: none; }
 
 .App-link {

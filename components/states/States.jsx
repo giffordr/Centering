@@ -11,13 +11,14 @@ import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
-import useSound from "use-sound";
 import dong from './A_resonant_trimmed_2.mp3'
+
 import InfoIcon from '@mui/icons-material/Info';
 import PeopleIcon from '@mui/icons-material/People';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import CollectionsIcon from '@mui/icons-material/Collections';
+
 import {
   HashRouter, Route, Routes, Link, Switch,
 } from 'react-router-dom';
@@ -59,11 +60,13 @@ class States extends React.Component {
 
     if (isPlaying) {
       // Pause the song if it is playing
-      this.state.audio.load();   
+      this.state.audio.load();
+      this.state.audio.volume = 0.5;
       
     } else {
 
       // Play the song if it is paused
+      this.state.audio.volume = 0.5;
       this.state.audio.play();
     }
 
@@ -94,7 +97,7 @@ class States extends React.Component {
 
       <Box sx={{ width: 1 }}>
         <Paper elevation={3}>
-      <BottomNavigation showLabels value={this.state.buttonWasClicked} onChange={(event, newValue) => this.handleButtonClick(newValue, event)}>
+      <BottomNavigation value={this.state.buttonWasClicked} onChange={(event, newValue) => this.handleButtonClick(newValue, event)}>
         <BottomNavigationAction label="Description" icon={<InfoIcon />} href='#description'> </BottomNavigationAction>
         <BottomNavigationAction label="Events" icon={<CalendarMonthIcon />} href='#events'/>
         <BottomNavigationAction label="About Us" icon={<PeopleIcon />} href='#about' />

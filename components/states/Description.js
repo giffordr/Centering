@@ -26,8 +26,8 @@ function Description (){
   
   return (
     <div className="App"> 
-    <Typography variant="h6"> 
-      This is the project description
+    <Typography variant="h6" font-style="italic" font-align="center"> 
+      Centering is a sound-art installation that leverages technology to create a meditative space for expression, reflection and belonging, by allowing participants to create immersive sound-fields together, using only their presence.
     </Typography>
     
       

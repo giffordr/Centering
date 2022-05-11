@@ -17,6 +17,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import HeadphonesIcon from '@mui/icons-material/Headphones';
 import {
   HashRouter, Route, Routes, Link,
 } from 'react-router-dom';
@@ -59,7 +60,7 @@ class Description extends React.Component {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            This is an example of synthesized singing bowl sounds that will be used in this project. In this sample, the same spatialization technique (referred to as ambisonics) is rendered as binaural audio, using a transform function that accounts for the shape of your head. As such, it gives a decent example of what these spatialized singing bowls might sound like in the real installation. It's best to use heaphones.
+            This is an example of synthesized singing bowl sounds that will be used in this project. In this sample, the same spatialization technique (referred to as ambisonics) is rendered as binaural audio, using a transform function that accounts for the shape of your head. As such, it gives a decent example of what these spatialized singing bowls might sound like in the real installation. It's best to use heaphones. <HeadphonesIcon />
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -122,7 +123,8 @@ render() {
       </div>
     </p>
     <Box textAlign="center">
-    <Button onClick={this.playPause} variant={this.state.buttonType}>{this.state.buttonLabel}</Button>
+    <Button onClick={this.playPause} variant={this.state.buttonType}>{this.state.buttonLabel}<HeadphonesIcon /></Button>
+    
     </Box>
       <Snackbar
         open={this.state.open}
@@ -134,7 +136,7 @@ render() {
       <p> 
       <div >
         <Typography variant="body"> 
-          Through public performances and collaboration with TAPS, Centering will engage the broader Stanford community to experience the installation together. Performers of any practice may use this novel reactive sound environment to craft new music, dance, or other performance. We plan to collaborate with Stanford-affiliated dancers and reach out to other performance departments. We will publicize the installation through CCRMA, music department, dance and visual arts departments, graduate housing, graduate life office, and undergraduate life office listservs. Due to the Birdcage’s highly trafficked location, we expect curious Stanford community members to approach signage and engage with the installation. For performance events, we estimate  30-70 audience members based on CCRMA concert attendance. Since the installation is outdoors, COVID-19 risk is low, and can be lowered with voluntary masking.
+          Through public performances and collaboration with TAPS, <span className="Title">Centering</span> will engage the broader Stanford community to experience the installation together. Performers of any practice may use this novel reactive sound environment to craft new music, dance, or other performance. We plan to collaborate with Stanford-affiliated dancers and reach out to other performance departments. We will publicize the installation through CCRMA, music department, dance and visual arts departments, graduate housing, graduate life office, and undergraduate life office listservs. Due to the Birdcage’s highly trafficked location, we expect curious Stanford community members to approach signage and engage with the installation. For performance events, we estimate  30-70 audience members based on CCRMA concert attendance. Since the installation is outdoors, COVID-19 risk is low, and can be lowered with voluntary masking.
         </Typography>
       </div>
     </p>
@@ -142,7 +144,7 @@ render() {
     <p> 
       <div >
         <Typography variant="body"> 
-          From March to April 2023, we will design software components including sound generation, computer vision, and logfile output for this web music app. Simultaneously, we will physically construct our bowl centerpiece and signage to be placed around the birdcage. In the first two weeks of May 2023, we will assemble hardware such as speakers, speaker stands, and power equipment and begin testing our outdoors system at CCRMA. We will also create and disseminate promotional materials, both physical and electronic during this time. Over three days in mid-May (5/19-5/21), we will set up the installation on site at the birdcage. This will include placing the bowl centerpiece, calibrating the speakers, setting up the camera, running power to the electronics, and putting up signage. Beginning the week of May 22, we will open Centering to the public for two weeks. On Friday, May 26 and Friday, June 2, we will organize collaborative performances at the installation. We will take down the installation by Wednesday, June 7. (These dates are approximate. We will book the birdcage through Tressider Meeting Services.)
+          From March to April 2023, we will design software components including sound generation, computer vision, and logfile output for this web music app. Simultaneously, we will physically construct our bowl centerpiece and signage to be placed around the birdcage. In the first two weeks of May 2023, we will assemble hardware such as speakers, speaker stands, and power equipment and begin testing our outdoors system at CCRMA. We will also create and disseminate promotional materials, both physical and electronic during this time. Over three days in mid-May (5/19-5/21), we will set up the installation on site at the birdcage. This will include placing the bowl centerpiece, calibrating the speakers, setting up the camera, running power to the electronics, and putting up signage. Beginning the week of May 22, we will open <span className="Title">Centering</span> to the public for two weeks. On Friday, May 26 and Friday, June 2, we will organize collaborative performances at the installation. We will take down the installation by Wednesday, June 7. (These dates are approximate. We will book the birdcage through Tressider Meeting Services.)
         </Typography>
       </div>
     </p>

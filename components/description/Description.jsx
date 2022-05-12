@@ -13,6 +13,8 @@ import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -152,7 +154,20 @@ render() {
           </Typography>
         </div>
       </p>
-      
+      <Box sx={{ flexGrow: 1 }} display="flex" alignItems="center" justifyContent="center" m="auto">
+        <Card sx={{ minWidth: 300, maxWidth: 700}}>
+          <CardMedia
+            component="img"
+            image="./components/description/birdcage.png"
+            alt="Birdcage"
+          />
+          <CardContent sx={{ display: 'inline' }}>
+            <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
+              Concept at Birdcage in White Plaza 
+            </Typography>
+          </CardContent>
+        </Card>
+      </Box>
       <p> 
         <div >
           <Typography variant="body"> 

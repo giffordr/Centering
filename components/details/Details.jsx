@@ -333,7 +333,7 @@ render() {
                 <CardContent>
                   
                   <Typography paragraph>
-                    Centroids in the current with the smallest computed euclidean distance from centroids in the previous frame, are passed the respective unique label. With an inference speed of ~20ms, it's expected that very little movement has taken place between frames. The third centroid is given a new unique label. Similarly, if a centroid dissappears (i.e. an individual leaves the space) their unique label will be pruned, so long as the centroid has not been found within 20 frames. This gives the label pruning a small window to find the individual again, in the event that the object detector briefly loses its >80% confidence.
+                    Centroids in the current frame, with the smallest computed euclidean distance from centroids in the previous frame, are passed their respective unique label. With an inference speed of ~20ms, it's expected that very little movement has taken place between frames. The third centroid is given a new unique label. Similarly, if a centroid dissappears (i.e. an individual leaves the space) their unique label will be pruned, so long as the centroid has not been found within 20 frames. This gives the label pruning a small window to find the individual again, in the event that the object detector briefly loses its >80% confidence.
                   </Typography>
                 </CardContent>
               </Collapse>

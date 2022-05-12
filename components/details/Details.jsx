@@ -5,7 +5,7 @@ import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import List from '@mui/material/List';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/Iconbutton';
+import IconButton from '@mui/material/IconButton';
 import Snackbar from '@mui/material/Snackbar';
 import ListItem from '@mui/material/ListItem';
 import Paper from '@mui/material/Paper';
@@ -18,6 +18,7 @@ import CardMedia from '@mui/material/CardMedia';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Collapse from '@mui/material/Collapse';
+import Stack from '@mui/material/Stack';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -115,6 +116,7 @@ render() {
                 image="./components/details/SimplifiedSetup.png"
                 alt="Paella dish"
               />
+            <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>
                 <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
                   1. Simplified Setup
@@ -130,6 +132,7 @@ render() {
                   <ExpandMoreIcon />
                 </ExpandMore>
               </CardActions>
+            </Stack>
               <Collapse in={this.state.expanded1} timeout="auto" unmountOnExit>
                 <CardContent>
                   
@@ -148,6 +151,7 @@ render() {
                 image="./components/details/TopDownView.png"
                 alt="Paella dish"
               />
+            <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>
                 <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
                   2. Overhead Camera
@@ -163,6 +167,7 @@ render() {
                   <ExpandMoreIcon />
                 </ExpandMore>
               </CardActions>
+            </Stack>
               <Collapse in={this.state.expanded2} timeout="auto" unmountOnExit>
                 <CardContent>
                   
@@ -181,6 +186,7 @@ render() {
                 image="./components/details/DetectionModel.png"
                 alt="Paella dish"
               />
+            <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>
                 <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
                   3. Object Detection
@@ -196,6 +202,7 @@ render() {
                   <ExpandMoreIcon />
                 </ExpandMore>
               </CardActions>
+            </Stack>
               <Collapse in={this.state.expanded3} timeout="auto" unmountOnExit>
                 <CardContent>
                   
@@ -214,6 +221,7 @@ render() {
                 image="./components/details/ComputeCentroids.png"
                 alt="Paella dish"
               />
+            <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>
                 <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
                   4. Compute Centroids
@@ -229,6 +237,7 @@ render() {
                   <ExpandMoreIcon />
                 </ExpandMore>
               </CardActions>
+            </Stack>
               <Collapse in={this.state.expanded4} timeout="auto" unmountOnExit>
                 <CardContent>
                   
@@ -247,6 +256,7 @@ render() {
                 image="./components/details/UniqueLables.png"
                 alt="Paella dish"
               />
+            <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>
                 <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
                   5. Labeling
@@ -262,6 +272,7 @@ render() {
                   <ExpandMoreIcon />
                 </ExpandMore>
               </CardActions>
+            </Stack>
               <Collapse in={this.state.expanded5} timeout="auto" unmountOnExit>
                 <CardContent>
                   
@@ -280,6 +291,7 @@ render() {
                 image="./components/details/KNN.png"
                 alt="Paella dish"
               />
+            <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>
                 <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
                   6. Euclidean Distance
@@ -295,6 +307,7 @@ render() {
                   <ExpandMoreIcon />
                 </ExpandMore>
               </CardActions>
+            </Stack>
               <Collapse in={this.state.expanded6} timeout="auto" unmountOnExit>
                 <CardContent>
                   
@@ -314,6 +327,7 @@ render() {
                 image="./components/details/NextFrame.png"
                 alt="Paella dish"
               />
+            <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>
                 <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
                   7. K-Nearest Neighbors
@@ -329,6 +343,7 @@ render() {
                   <ExpandMoreIcon />
                 </ExpandMore>
               </CardActions>
+            </Stack>
               <Collapse in={this.state.expanded7} timeout="auto" unmountOnExit>
                 <CardContent>
                   
@@ -347,6 +362,7 @@ render() {
                 image="./components/details/ComputeCoordinates.png"
                 alt="Paella dish"
               />
+            <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>
                 <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
                   8. UDP Messages
@@ -362,6 +378,7 @@ render() {
                   <ExpandMoreIcon />
                 </ExpandMore>
               </CardActions>
+            </Stack>
               <Collapse in={this.state.expanded8} timeout="auto" unmountOnExit>
                 <CardContent>
                   
@@ -380,6 +397,7 @@ render() {
                 image="./components/details/SpatializeAudio.png"
                 alt="Paella dish"
               />
+            <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>
                 <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
                   9. Sound Generation
@@ -395,6 +413,7 @@ render() {
                   <ExpandMoreIcon />
                 </ExpandMore>
               </CardActions>
+            </Stack>
               <Collapse in={this.state.expanded9} timeout="auto" unmountOnExit>
                 <CardContent>
                   

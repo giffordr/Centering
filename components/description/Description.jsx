@@ -5,13 +5,14 @@ import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import List from '@mui/material/List';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/Iconbutton';
+import IconButton from '@mui/material/IconButton';
 import Snackbar from '@mui/material/Snackbar';
 import ListItem from '@mui/material/ListItem';
 import Paper from '@mui/material/Paper';
 import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
+import Stack from '@mui/material/Stack';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
@@ -52,24 +53,24 @@ class Description extends React.Component {
     }
     this.setState({open: false});
   };
-  action = (<React.Fragment> 
-    <IconButton
-        size="small"
-        align="right"
-        aria-label="close"
-        color="inherit"
-        onClick={this.handleClose}
-        >
-          <CloseIcon fontSize="small" />
-      </IconButton>
-     
-    </React.Fragment>);
   
   message = (
     <React.Fragment> 
-      <Typography >Playing: Spatialized Sound Demo</Typography>
+      <Stack direction="row" justifyContent="space-between">
+        <Typography >Playing: Spatialized Sound Demo</Typography>
+  
+        <IconButton
+          size="small"
+          align="right"
+          aria-label="close"
+          color="inherit"
+          onClick={this.handleClose}
+          >
+            <CloseIcon fontSize="small" />
+        </IconButton>
+      </Stack>
       <Accordion>
-      <AccordionSummary
+        <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
@@ -144,7 +145,7 @@ render() {
         autoHideDuration={6000}
         message={this.message}
         handleClose={this.handleClose}
-        action={this.action}
+        
       />
         
       <p> 

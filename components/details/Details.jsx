@@ -277,7 +277,7 @@ render() {
               <CardMedia
                 component="img"
                 height="194"
-                image="./components/details/NextFrame.png"
+                image="./components/details/KNN.png"
                 alt="Paella dish"
               />
               <CardContent sx={{ display: 'inline' }}>
@@ -311,7 +311,7 @@ render() {
               <CardMedia
                 component="img"
                 height="194"
-                image="./components/details/KNN.png"
+                image="./components/details/NextFrame.png"
                 alt="Paella dish"
               />
               <CardContent sx={{ display: 'inline' }}>

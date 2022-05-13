@@ -46,6 +46,11 @@ state = {
     expanded8: false,
     expanded9: false,
 };
+
+componentDidMount(){
+          const section = document.querySelector( '#Title' );
+            section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+}
   
 handleExpandClick1 = () => {   
   this.setState(prevState => ({expanded1: !prevState.expanded1}));  
@@ -81,7 +86,7 @@ render() {
     <div className="Body"> 
       
       <p> 
-        <div className = "Description">
+        <div className = "Description" id ="Title">
           <Typography variant="h5" align="center"> 
              Detailed Software Desciption
           </Typography>
@@ -93,7 +98,7 @@ render() {
       <p> 
         <div className = "Description">
           <Typography variant="Body"> 
-             As mentioned in the brief project description, all computation for <span className="Title">Centering</span> will take place on a small Linux embedded system (RaspberryPi 4+). We found that while it's compact, it's limited CPU didn't allow for realtime interactions. However, with the addition of a <a href="https://en.wikipedia.org/wiki/Tensor_Processing_Unit">Tensor Processing Unit (TPU)</a> accelerator, we were able to achieve an object detection model inference speed below the frame rate of the camera, and implement the algorithm detailed below, to provide realtime interaction with the space.  
+             All computation for <span className="Title">Centering</span> takes place on a small Linux embedded system (RaspberryPi 4+). We found that while it's compact, it's limited CPU didn't allow for realtime interactions. However, with the addition of a <a href="https://en.wikipedia.org/wiki/Tensor_Processing_Unit">Tensor Processing Unit (TPU)</a> accelerator, we were able to achieve an object detection model inference speed below the frame rate of the camera, and implement the algorithm detailed below, to provide realtime interaction with the space.  
           </Typography>
         </div>
       </p>

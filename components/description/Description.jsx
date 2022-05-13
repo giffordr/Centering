@@ -127,7 +127,7 @@ render() {
           </Typography>
         </div>
       </p>
-      
+    <Divider />
       <p> 
         <div >
           <Typography variant="body"> 
@@ -176,7 +176,7 @@ render() {
           </Typography>
         </div>
       </p>
-        
+      
       <p> 
         <div >
           <Typography variant="body"> 

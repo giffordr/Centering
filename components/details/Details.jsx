@@ -93,7 +93,7 @@ render() {
       <p> 
         <div className = "Description">
           <Typography variant="Body"> 
-             As mentioned in the brief project description, all computation for <span className="Title">Centering</span> will take place on a small Linux embedded system (RaspberryPi 4+). We found that while its compact, its limited CPU didn't allow for realtime interactions. However, with the addition of a Tensorflow Processing Unit (TPU) accelerator, we were able to achieve an object detection model inference speed below the frame rate of the camera, and implement the algorithm detailed below, to provide realtime interaction with the space.  
+             As mentioned in the brief project description, all computation for <span className="Title">Centering</span> will take place on a small Linux embedded system (RaspberryPi 4+). We found that while it's compact, it's limited CPU didn't allow for realtime interactions. However, with the addition of a <a href="https://en.wikipedia.org/wiki/Tensor_Processing_Unit">Tensor Processing Unit (TPU)</a> accelerator, we were able to achieve an object detection model inference speed below the frame rate of the camera, and implement the algorithm detailed below, to provide realtime interaction with the space.  
           </Typography>
         </div>
       </p>
@@ -207,7 +207,7 @@ render() {
                 <CardContent>
                   
                   <Typography paragraph>
-                    We use a tensorflow based mobilenet, pretrained to detect people. With our TPU acclerator, the inference speed of our mobilenet is ~20 ms. This falls well below the framerate of the camera, allowing for realtime tracking and interactive sound synthesis. Our algorithm will only proceed with predictions >80% certainty.
+                    We use a tensorflow based <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network">convolutional neural network</a> for mobile applications (mobilenet), pretrained to detect people. With our TPU acclerator, the inference speed of our mobilenet is ~20 ms. This falls well below the framerate of the camera, allowing for realtime tracking and interactive sound synthesis. Our algorithm will only proceed with predictions >80% certainty.
                   </Typography>
                 </CardContent>
               </Collapse>
@@ -330,7 +330,7 @@ render() {
             <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>
                 <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
-                  7. K-Nearest Neighbors
+                  7. <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm">K-Nearest Neighbors</a>
                 </Typography>
               </CardContent>
               <CardActions disableSpacing sx={{ display: 'inline' }}>
@@ -383,7 +383,7 @@ render() {
                 <CardContent>
                   
                   <Typography paragraph>
-                    Along with computed euclidean distance between centroids in the current frame, polar coordinates are computed and sent via User Datagram Protocol (UDP) messages to PureData, for sound synthesis.
+                    Along with computed euclidean distance between centroids in the current frame, polar coordinates are computed and sent via <a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol">User Datagram Protocol (UDP)</a> messages to PureData, for sound synthesis.
                   </Typography>
                 </CardContent>
               </Collapse>
@@ -418,7 +418,7 @@ render() {
                 <CardContent>
                   
                   <Typography paragraph>
-                    Once in PureData, sounds are synthesized and Ambisonically encoded. The encoding process, uses polar coordinates to each individual, and outputs weights for sound source localization. To make the sound as if it were emanating from each individuals location. The encoded weighted signals, are then decoded for the specific speaker array, generating a sound field which captilaizes on constuctive interference patterns, to achieve percieved sound sources at any angle around the speaker ring. 
+                    Once in PureData, sounds are synthesized and <a href="https://en.wikipedia.org/wiki/Ambisonics">Ambisonically encoded</a>. The encoding process, uses polar coordinates to each individual, and outputs weights for sound source localization. To make the sound as if it were emanating from each individuals location. The encoded weighted signals, are then decoded for the specific speaker array, generating a sound field which captilaizes on constuctive interference patterns, to achieve percieved sound sources at any angle around the speaker ring. 
                   </Typography>
                 </CardContent>
               </Collapse>

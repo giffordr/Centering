@@ -42,13 +42,6 @@ import Kathleen from '../kathleen/Kathleen';
 
 class About extends React.Component {
 
-handelBio(){
-    setTimeout(function() {
-
-      }, 1000);
-          const section = document.querySelector( '#Bio' )
-          section.scrollIntoView( { behavior: 'smooth', block: 'start' } )         
-}
  
 render() {
   
@@ -74,14 +67,14 @@ render() {
         <CardActionArea style={{borderRadius: '50%'}} sx={{'&:hover': {opacity: [0.8, 0.7, 0.6],},}} component={Link} to="/about/kathleen" > 
      
         <Avatar
-          alt="Kathleen Yaun"
+          alt="Kathleen Yuan"
           src="./components/about/tile.jpg"
           sx={{ width: 'calc(50px + 10vmin)', height: 'calc(50px + 10vmin)' }}
         />
            </CardActionArea>
         
      
-        <Typography variant="body2" align="center" justifyContent="center">Kathleen Yaun</Typography>
+        <Typography variant="body2" align="center" justifyContent="center">Kathleen Yuan</Typography>
       </Card>
       </Stack>
       <p>

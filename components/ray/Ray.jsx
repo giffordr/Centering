@@ -51,7 +51,7 @@ render() {
       </Typography>
     <p>
       <Typography variant="body2"> 
-        Ray Gifford is a mulimedia artist and technologist from South Carolina. He is pursuing his Master's in 
+        Ray Gifford (he/him) is a mulimedia artist and technologist from South Carolina. He is pursuing his Master's in 
         Music, Science, and Technology at Stanford University. His work takes the form of interactive audiovisual apps and multimedia 
         installation art. His works leverage emerging technologies, including computer vision, sound spatialization, and multisensor integration,
         for reactive sound synthesis across different media. Prior to Stanford, he received a Bachelor's in 

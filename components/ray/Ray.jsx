@@ -133,7 +133,7 @@ render() {
                 component="img"
                 height="200"
                 image="./components/details/SimplifiedSetup.png"
-                alt="Paella dish"
+                alt="Close"
               />
             <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>
@@ -169,8 +169,8 @@ render() {
               <CardMedia
                 component="img"
                 height="200"
-                image="./components/ray/gods.png"
-                alt="Paella dish"
+                image="./components/ray/gods.PNG"
+                alt="designers are gods"
               />
             <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>

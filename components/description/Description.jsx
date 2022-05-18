@@ -119,7 +119,8 @@ class Description extends React.Component {
 render() {
   
   return (
-    <div className="Body">    
+    <div className="Body">
+    <Box sx={{maxWidth:900}} alignItems="center" justifyContent="center" m='auto'>    
       <p> 
         <div className = "Description">
           <Typography variant="h6" align="center"> 
@@ -156,7 +157,7 @@ render() {
         </div>
       </p>
       <Box sx={{ flexGrow: 1 }} display="flex" alignItems="center" justifyContent="center" m="auto">
-        <Card sx={{ minWidth: 300, maxWidth: 700}}>
+        <Card sx={{ minWidth: 300, maxWidth: 800}}>
           <CardMedia
             component="img"
             image="./components/description/birdcage.png"
@@ -185,8 +186,8 @@ render() {
         </div>
       </p>
       
+    </Box>
     </div>
-    
     );
   }
 }

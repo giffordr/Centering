@@ -83,10 +83,11 @@ handleExpandClick9 = () => {
 render() {
   
   return (
-    <div className="Body"> 
-      
+    <div className="Body" id ="Title">
+    
+    <Box sx={{maxWidth:900}} alignItems="center" justifyContent="center" m='auto'>
       <p> 
-        <div className = "Description" id ="Title">
+        <div className = "Description" >
           <Typography variant="h5" align="center"> 
              Detailed Software Desciption
           </Typography>
@@ -103,6 +104,8 @@ render() {
         </div>
       </p>
       <Divider/>
+    </Box>
+              
       <p> 
         <div className = "Description">
           <Typography variant="h6" align="center"> 
@@ -431,7 +434,9 @@ render() {
           </Grid>
         </Grid>
       </Box>
+       <Box sx={{maxWidth:900}} alignItems="center" justifyContent="center" m='auto'>    
       <p>
+      
         <Divider/>
         
         <div className = "Description">
@@ -440,6 +445,7 @@ render() {
           </Typography>
         </div> 
       </p> 
+      </Box>
     </div>
 
     

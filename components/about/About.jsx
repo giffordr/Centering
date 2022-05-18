@@ -38,6 +38,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 import Ray from '../ray/Ray';
 import Kathleen from '../kathleen/Kathleen';
+import Statement from '../statement/Statement';
 
 
 class About extends React.Component {
@@ -77,16 +78,21 @@ render() {
         <Typography variant="body2" align="center" justifyContent="center">Kathleen Yuan</Typography>
       </Card>
       </Stack>
+    
       <p>
         <Divider />
+      </p>
+  </Box>
+      <div>
         <HashRouter >
             <Switch >
             <Route path="/about/kathleen" component={Kathleen} />
             <Route path="/about/ray" component={Ray} />
+            <Route path="/about" component={Statement} />
             </Switch>
         </HashRouter>
-      </p>
-    </Box>
+      </div>
+    
   </div>
   );
   

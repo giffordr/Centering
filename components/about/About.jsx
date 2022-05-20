@@ -69,7 +69,7 @@ render() {
      
         <Avatar
           alt="Kathleen Yuan"
-          src="./components/about/tile.jpg"
+          src="./components/kathleen/KathleenPic.PNG"
           sx={{ width: 'calc(50px + 10vmin)', height: 'calc(50px + 10vmin)' }}
         />
            </CardActionArea>

@@ -86,7 +86,7 @@ render() {
           <Typography variant="h6" component="span">
             Design
           </Typography>
-          <Typography>Design software components and bowl centerpiece</Typography>
+          <Typography>software components and bowl centerpiece</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -130,7 +130,7 @@ render() {
           <Typography variant="h6" component="span">
             Install
           </Typography>
-          <Typography>Install at Birdcage in White Plaza</Typography>
+          <Typography>at Birdcage in White Plaza</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>

@@ -113,7 +113,7 @@ render() {
         Ray Gifford (he/him) is a mulimedia artist and technologist from South Carolina. He is pursuing his Master's in 
         Music, Science, and Technology at Stanford University. His work takes the form of interactive audiovisual apps and multimedia 
         installation art. His works leverage emerging technologies, including computer vision, sound spatialization, and multisensor integration,
-        for reactive sound synthesis across different media. Prior to Stanford, he received a Bachelor's in 
+        for reactive sound synthesis across different mediums. Prior to Stanford, he received a Bachelor's in 
         Biochemistry and Molecular Biology, with a minor in Neuroscience, and leadership distinction in research, from the 
         University of South Carolina.
       </Typography>
@@ -138,7 +138,7 @@ render() {
             <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>
                 <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
-                  Sound Art: "Close"
+                  "Close Enough"
                 </Typography>
               </CardContent>
               <CardActions disableSpacing sx={{ display: 'inline' }}>
@@ -157,9 +157,10 @@ render() {
                 <CardContent>
                   
                   <Typography paragraph>
-                    TODO: brief description of work
+                    <span className="Title">Close Enough</span> is a 6 ft diameter space, that shares discomfort in getting close to others, using spatialized audio.
+                    When close enough to touch, it suggests something else.
                   </Typography>
-                  <Button variant="contained" align="center">Video</Button>
+                  <Button variant="contained" href="https://youtu.be/-brs0KA_rnY" align="center">Video</Button>
                 </CardContent>
               </Collapse>
             </Card>
@@ -175,7 +176,7 @@ render() {
             <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>
                 <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
-                  Audiovisual: "Designers are gods"
+                  "Designers are gods"
                 </Typography>     
               </CardContent>
               <CardActions disableSpacing sx={{ display: 'inline' }}>
@@ -193,9 +194,10 @@ render() {
                 <CardContent>
                   
                   <Typography paragraph>
-                    TODO: brief description of work
+                    <span className="Title">Designers are gods</span> is an audiovisual native app for MacOS, that allows users to create sonic 
+                    celestial bodies. The user must face what that they create. The more greedy they are, the more chaotic and disturbing the sound field that is generated.
                   </Typography>
-                   <Button variant="contained" align="center">Video</Button>
+                   <Button variant="contained" href="https://youtu.be/DTaQ5XgtuKM" align="center">Video</Button>
                 </CardContent>
               </Collapse>
             </Card>
@@ -209,7 +211,7 @@ render() {
             <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>
                 <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
-                  Sound Art: "Cultural Captials"
+                  "Cultural Captials"
                 </Typography>
               </CardContent>
               <CardActions disableSpacing sx={{ display: 'inline' }}>
@@ -227,8 +229,10 @@ render() {
                 <CardContent>
                   
                   <Typography paragraph>
-                    TODO: brief description of work
+                    <span className ="Title">Cultural Capitals</span> shares the experience of a cultural collision. Two domes modeled after a mosque in Mosul Iraq, and christian 
+                    church in South Carolina, seemingly destructive in nature, face one another with... completely unaware of the other's cultural interior.
                   </Typography>
+                  <Button variant="contained" href="https://raymondgifford.com/collaborative-projects/" align="center">Project Page</Button>
                 </CardContent>
               </Collapse>
             </Card>

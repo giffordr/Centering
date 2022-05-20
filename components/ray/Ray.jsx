@@ -194,7 +194,7 @@ render() {
                   
                   <Typography paragraph>
                     <span className="Title">Designers are gods</span> is an audiovisual native app for MacOS, that allows users to create sonic 
-                    celestial bodies. The user must face what that they create. The more greedy they are, the more chaotic and disturbing the sound field that is generated.
+                    celestial bodies. The user must face what that they create. The more greedy they are, the more chaotic and disturbing the sound field is.
                   </Typography>
                    <Button variant="contained" href="https://youtu.be/DTaQ5XgtuKM" align="center" id="Info2">Video</Button>
                 </CardContent>
@@ -229,7 +229,7 @@ render() {
                   
                   <Typography paragraph>
                     <span className ="Title">Cultural Capitals</span> shares the experience of a cultural collision. Two domes modeled after a mosque in Mosul Iraq, and christian 
-                    church in South Carolina, seemingly destructive in nature, face one another with... completely unaware of the other's cultural interior.
+                    church in South Carolina, seemingly destructive in nature, face one another... completely unaware of the other's cultural interior.
                   </Typography>
                   <Button variant="contained" href="https://raymondgifford.com/collaborative-projects/" align="center" id="Info3">Project Page</Button>
                 </CardContent>

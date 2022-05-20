@@ -42,28 +42,27 @@ state = {
     expanded1: false,
     expanded2: false,
     expanded3: false,
-    expanded4: false,
-    expanded5: false,
-    expanded6: false,
-    expanded7: false,
-    expanded8: false,
-    expanded9: false,
+
 };
   
 handleExpandClick1 = () => {   
-  this.setState(prevState => ({expanded1: !prevState.expanded1}));  
+  this.setState(prevState => ({expanded1: !prevState.expanded1})); 
 };
-handleExpandClick2 = () => {    
-  this.setState(prevState => ({expanded2: !prevState.expanded2})); 
+handleExpandClick2 = () => {
+  this.setState(prevState => ({expanded2: !prevState.expanded2}));
 };
 handleExpandClick3 = () => {    
-  this.setState(prevState => ({expanded3: !prevState.expanded3})); 
+  this.setState(prevState => ({expanded3: !prevState.expanded3}));
 };
   
 componentDidMount(){
-          const section = document.querySelector( '#Bio' );
-            section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+    let section = document.querySelector( '#Bio' );
+    section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
 }
+componentDidUpdate(){
+
+  }
+
 
 domes = (
     <React.Fragment> 
@@ -160,7 +159,7 @@ render() {
                     <span className="Title">Close Enough</span> is a 6 ft diameter space, that shares discomfort in getting close to others, using spatialized audio.
                     When close enough to touch, it suggests something else.
                   </Typography>
-                  <Button variant="contained" href="https://youtu.be/-brs0KA_rnY" align="center">Video</Button>
+                  <Button variant="contained" href="https://youtu.be/-brs0KA_rnY" align="center" id="Info1">Video</Button>
                 </CardContent>
               </Collapse>
             </Card>
@@ -197,7 +196,7 @@ render() {
                     <span className="Title">Designers are gods</span> is an audiovisual native app for MacOS, that allows users to create sonic 
                     celestial bodies. The user must face what that they create. The more greedy they are, the more chaotic and disturbing the sound field that is generated.
                   </Typography>
-                   <Button variant="contained" href="https://youtu.be/DTaQ5XgtuKM" align="center">Video</Button>
+                   <Button variant="contained" href="https://youtu.be/DTaQ5XgtuKM" align="center" id="Info2">Video</Button>
                 </CardContent>
               </Collapse>
             </Card>
@@ -232,7 +231,7 @@ render() {
                     <span className ="Title">Cultural Capitals</span> shares the experience of a cultural collision. Two domes modeled after a mosque in Mosul Iraq, and christian 
                     church in South Carolina, seemingly destructive in nature, face one another with... completely unaware of the other's cultural interior.
                   </Typography>
-                  <Button variant="contained" href="https://raymondgifford.com/collaborative-projects/" align="center">Project Page</Button>
+                  <Button variant="contained" href="https://raymondgifford.com/collaborative-projects/" align="center" id="Info3">Project Page</Button>
                 </CardContent>
               </Collapse>
             </Card>

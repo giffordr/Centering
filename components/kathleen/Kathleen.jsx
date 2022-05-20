@@ -150,7 +150,7 @@ render() {
                 <CardContent>
                   
                   <Typography paragraph>
-                    Deep Listening in Virtual Reality is a social VR music-making platform that fosters connection and reflection 
+                    <span className="Title">Deep Listening in Virtual Reality</span> is a social VR music-making platform that fosters connection and reflection 
                     through group improvisation in the form of accumulated sonic meditation recordings.
                   </Typography>
                   <Button variant="contained" href='https://youtu.be/1nK0W4FuoNY' align="center">Video</Button>
@@ -187,7 +187,7 @@ render() {
                 <CardContent>
                   
                   <Typography paragraph>
-                    Inbox is a physical musical installation in which audiences submit anonymous messages that will never be 
+                     <span className="Title">Inbox</span> is a physical musical installation in which audiences submit anonymous messages that will never be 
                     delivered to their intended recipients to a reflective, soundscape-producing box. 
                   </Typography>
                    <Button variant="contained" href='https://www.youtube.com/watch?v=9yhjOnkkY2Y' align="center">Video</Button>
@@ -225,7 +225,7 @@ render() {
                 <CardContent>
                   
                   <Typography paragraph>
-                    Random Access Memories is an audiovisual exploration of unreliable, 
+                     <span className="Title">Random Access Memories</span> is an audiovisual exploration of unreliable, 
                     uncontrollable, and traumatic memories represented as intrusive thoughts, 
                     in which the audience progresses the nonlinear narrative by keypress.
                   </Typography>

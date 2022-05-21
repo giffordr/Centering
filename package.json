@@ -2,7 +2,7 @@
   "name": "centering",
   "version": "1.0.0",
   "private": true,
-  "description": "CS142 Project #4 - Learn ReactJS",
+  "description": "Centering Web App",
   "main": "webServer.js",
   "scripts": {
     "build": "webpack --devtool eval-cheap-module-source-map --output-pathinfo",

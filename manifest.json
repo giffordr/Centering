@@ -3,5 +3,6 @@
 	"short_name": "Centering",
 	"start_url": "index.html",
 	"display": "standalone",
-	"theme_color": "#000000"
+	"theme_color": "#00966f",
+    "background_color": "#c36417"
 }

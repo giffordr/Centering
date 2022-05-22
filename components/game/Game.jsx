@@ -11,10 +11,10 @@ state={
 }
 
 unityContext = new UnityContext({
-    loaderUrl: "./build/SDVisualizer_webGL_3.loader.js",
-    dataUrl: "./build/SDVisualizer_webGL_3.data",
-    frameworkUrl: "./build/SDVisualizer_webGL_3.framework.js",
-    codeUrl: "./build/SDVisualizer_webGL_3.wasm",
+    loaderUrl: "./build/CenteringVisualizer_WebGL.loader.js",
+    dataUrl: "./build/CenteringVisualizer_WebGL.data",
+    frameworkUrl: "./build/CenteringVisualizer_WebGL.framework.js",
+    codeUrl: "./build/CenteringVisualizer_WebGL.wasm",
     productName: "Centering App",
     productVersion: "1.0.0",
     companyName: "Blue Hole Games",

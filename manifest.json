@@ -1,7 +1,7 @@
 {
 	"name": "Centering: A place for creation, reflection and connection",
 	"short_name": "Centering",
-	"start_url": "index.html",
+	"start_url": "game.html",
 	"display": "standalone",
 	"theme_color": "#00966f",
     "background_color": "#c36417"

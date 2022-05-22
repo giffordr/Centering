@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './styles/index.css';
 
 import States from './components/states/States';
-import Description from './components/description/Description';
+import Game from './components/game/Game';
 
 ReactDOM.render(
   <States />,
+  //<Game />,
   document.getElementById('reactapp'),
 );

@@ -47,8 +47,8 @@ render(){
     <Unity
       unityContext={this.unityContext}
       style={{
-        height: window.innerHeight,
-        width: window.innerWidth,
+        height: window.screen.height,
+        width: window.screen.width,
         background: "grey",
       }}
     />

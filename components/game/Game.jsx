@@ -42,8 +42,7 @@ handleOnClickFullscreen() {
 render(){
   
   return (
-    <div>
-      
+    <div> 
     <Unity
       unityContext={this.unityContext}
       style={{
@@ -52,7 +51,6 @@ render(){
         background: "grey",
       }}
     />
-    <Button onClick={this.handleOnClickFullscreen} variant='contained'>Fullscreen</Button>
     </div>
   
   );

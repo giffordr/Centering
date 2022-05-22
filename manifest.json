@@ -3,5 +3,5 @@
 	"short_name": "Centering",
 	"start_url": "index.html",
 	"display": "standalone",
-	"theme_color": "aliceblue"
+	"theme_color": "#000000"
 }

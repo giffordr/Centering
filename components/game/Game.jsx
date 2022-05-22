@@ -16,8 +16,7 @@ render(){
       unityContext={unityContext}
       style={{
         height: "100%",
-        width: 950,
-        border: "2px solid black",
+        width: "100%",
         background: "grey",
       }}
     />);

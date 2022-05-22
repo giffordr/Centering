@@ -1,31 +1,45 @@
 'use strict';
 import React from "react";
+import Button from '@mui/material/Button';
 import Unity, { UnityContext } from "react-unity-webgl";
 
 class Game extends React.Component {
+
+state={
+  fullscreen: false,
+        
+}
 
 unityContext = new UnityContext({
     loaderUrl: "./build/SDVisualizer_webGL_3.loader.js",
     dataUrl: "./build/SDVisualizer_webGL_3.data",
     frameworkUrl: "./build/SDVisualizer_webGL_3.framework.js",
     codeUrl: "./build/SDVisualizer_webGL_3.wasm",
+    productName: "Centering App",
+    productVersion: "1.0.0",
+    companyName: "Blue Hole Games",
+    webGLContextAttributes: {
+      alpha: true,
+      antialias: true,
+      depth: true,
+      failIfMajorPerformanceCaveat: true,
+      powerPreference: "high-performance",
+      premultipliedAlpha: true,
+      preserveDrawingBuffer: true,
+      stencil: true,
+      desynchronized: true,
+      xrCompatible: true,
+      },
     })
 
-componentDidMount() {
-    unityContext.setFullscreen(true);
-  }
 handleOnClickFullscreen() {
-    unityContext.setFullscreen(true);
+    this.unityContext.setFullscreen(true);
+    this.setState(prevState => ({fullscreen: !prevState.fullscreen}));
+    console.log(this.state.fullscreen);
+    
   }
   
 render(){
-
-  //const unityContext = new UnityContext({
-    //loaderUrl: "./build/SDVisualizer_webGL_3.loader.js",
-    //dataUrl: "./build/SDVisualizer_webGL_3.data",
-    //frameworkUrl: "./build/SDVisualizer_webGL_3.framework.js",
-    //codeUrl: "./build/SDVisualizer_webGL_3.wasm",
-   // })
   
   return (
     <div>
@@ -33,12 +47,12 @@ render(){
     <Unity
       unityContext={this.unityContext}
       style={{
-        height: "100%",
-        width: "100%",
+        height: window.screen.height,
+        width: window.screen.width,
         background: "grey",
       }}
     />
-    <button onClick={this.handleOnClickFullscreen}>Fullscreen</button>
+    <Button onClick={this.handleOnClickFullscreen} variant='contained'>Fullscreen</Button>
     </div>
   
   );

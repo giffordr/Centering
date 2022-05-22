@@ -1,7 +1,7 @@
 {
 	"name": "Centering: A place for creation, reflection and connection",
 	"short_name": "Centering",
-	"start_url": "/index.html",
+	"start_url": "index.html",
 	"display": "standalone",
 	"theme_color": "aliceblue"
 }

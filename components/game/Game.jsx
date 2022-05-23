@@ -8,7 +8,8 @@ class Game extends React.Component {
 
 state={
   fullscreen: false,
-  topMargin: window.innerHeight+50,        
+  topMargin: window.innerHeight+50,
+  widthMargin: window.innerWidth,
 }
 
 unityContext = new UnityContext({
@@ -49,7 +50,7 @@ render(){
       unityContext={this.unityContext}
       style={{
         height: this.state.topMargin,
-        width: window.innerWidth,       
+        width: this.state.widthMargin,       
         background: "grey",
       }}
     />

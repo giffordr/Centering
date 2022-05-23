@@ -1,4 +1,5 @@
 'use strict';
+import './Game.css';
 import React from "react";
 import Button from '@mui/material/Button';
 import Unity, { UnityContext } from "react-unity-webgl";
@@ -44,17 +45,18 @@ render(){
   return (
     <div> 
     <Unity
+      className={"centering-canvas"}
       unityContext={this.unityContext}
-      style={{
-        height: window.innerHeight,
-        width: window.innerWidth,
-        background: "grey",
-      }}
     />
     </div>
   
   );
 }
 }
+//style={{
+      //  height: calc(window.innerHeight + env(safe-area-inset-top)),
+       // width: window.innerWidth,
+      //  background: "grey",
+      //}}
 
 export default Game;

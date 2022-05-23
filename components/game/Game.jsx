@@ -1,5 +1,5 @@
 'use strict';
-import './Game.css';
+
 import React from "react";
 import Button from '@mui/material/Button';
 import Unity, { UnityContext } from "react-unity-webgl";
@@ -8,7 +8,7 @@ class Game extends React.Component {
 
 state={
   fullscreen: false,
-        
+  topMargin: window.innerHeight+20,        
 }
 
 unityContext = new UnityContext({
@@ -47,6 +47,12 @@ render(){
     <Unity
       className={"centering-canvas"}
       unityContext={this.unityContext}
+      style={{
+        height: this.state.topMargin,
+        width: window.innerWidth,
+        
+        background: "grey",
+      }}
     />
     </div>
   

@@ -204,13 +204,18 @@ render() {
           <Grid item xs display="flex" alignItems="center" justifyContent="center" m="auto">
             <Card sx={{ maxWidth: 370, minWidth: 370}}>
               <CardContent sx={{ margin: 0, padding:0 }}>
-                {this.domes}
+               <CardMedia
+                component="img"
+                height="200"
+                image="./components/ray/AudioVisualizerPic.jpg"
+                alt="Audio Visualizer"
+              />
               </CardContent>
                 
             <Stack direction="row" justifyContent="space-between">
               <CardContent sx={{ display: 'inline' }}>
                 <Typography variant="body2" color="text.secondary" sx={{ display: 'inline' }}>
-                  "Cultural Captials"
+                  "Synchronized"
                 </Typography>
               </CardContent>
               <CardActions disableSpacing sx={{ display: 'inline' }}>
@@ -228,8 +233,9 @@ render() {
                 <CardContent>
                   
                   <Typography paragraph>
-                    <span className ="Title">Cultural Capitals</span> shares the experience of a cultural collision. Two domes modeled after a mosque in Mosul Iraq, and christian 
-                    church in South Carolina, seemingly destructive in nature, face one another... completely unaware of the other's cultural interior.
+                    <span className ="Title">Synchronized</span> is an audio visualizer that shares the experience of walking into the woods in Congaree, South Carolina, 
+                    and watching one of the only known varieties of synchronizing fireflies, flash in unison. Here the firflies flash in unison and synchronize to the shape
+                    of the audio waveform picked up from a microphone.
                   </Typography>
                   <Button variant="contained" href="https://raymondgifford.com/collaborative-projects/" align="center" id="Info3">Project Page</Button>
                 </CardContent>

@@ -47,18 +47,18 @@ handleOnClickFullscreen() {
   }
 
 handleResize() {
-  if (window.innerHeight>window.innerWidth){
+  
     this.setState({
           topMargin: window.innerHeight + 50,
           widthMargin: window.innerWidth
     })
-  }
-  else {
+  
+  
       this.setState({
         topMargin: window.innerHeight,
         widthMargin: window.innerWidth+50
       })
-  }
+  
 }
 
 

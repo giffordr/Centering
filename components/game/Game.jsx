@@ -53,12 +53,6 @@ handleResize() {
           widthMargin: window.innerWidth
     })
   
-  
-      this.setState({
-        topMargin: window.innerHeight,
-        widthMargin: window.innerWidth+50
-      })
-  
 }
 
 

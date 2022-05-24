@@ -5,12 +5,17 @@ import Button from '@mui/material/Button';
 import Unity, { UnityContext } from "react-unity-webgl";
 
 class Game extends React.Component {
+constructor(props) {
+    super(props);
+    this.state = {
+      isToggleOn: true,
+      fullscreen: false,
+      topMargin: window.innerHeight+50,
+      widthMargin: window.innerWidth};
 
-state={
-  fullscreen: false,
-  topMargin: window.innerHeight+50,
-  widthMargin: window.innerWidth,
-}
+    // This binding is necessary to make `this` work in the callback
+    this.handleResize = this.handleResize.bind(this);
+  }
 
 unityContext = new UnityContext({
     loaderUrl: "./build/CenteringVisualizer_WebGL.loader.js",
@@ -40,11 +45,29 @@ handleOnClickFullscreen() {
     console.log(this.state.fullscreen);
     
   }
+
+handleResize() {
+  if (window.innerHeight>window.innerWidth){
+    this.setState({
+          topMargin: window.innerHeight + 50,
+          widthMargin: window.innerWidth
+    })
+  }
+  else {
+      this.setState({
+        topMargin: window.innerHeight,
+        widthMargin: window.innerWidth+50
+      })
+  }
+}
+
+
   
 render(){
-  
+   window.addEventListener('resize', this.handleResize)
   return (
     <div> 
+       
     <Unity
       className={"centering-canvas"}
       unityContext={this.unityContext}

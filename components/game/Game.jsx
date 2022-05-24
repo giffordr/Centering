@@ -47,7 +47,7 @@ handleOnClickFullscreen() {
   }
 
 handleResize() {
-  
+   window.addEventListener('resize', this.handleResize)
     this.setState({
           topMargin: window.innerHeight + 50,
           widthMargin: window.innerWidth
@@ -66,8 +66,8 @@ render(){
       className={"centering-canvas"}
       unityContext={this.unityContext}
       style={{
-        height: this.state.topMargin,
-        width: this.state.widthMargin,       
+        height: "100vh",
+        width: "100vw",       
         background: "grey",
       }}
     />

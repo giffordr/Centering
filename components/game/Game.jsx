@@ -47,7 +47,7 @@ handleOnClickFullscreen() {
   }
 
 handleResize() {
-   window.addEventListener('resize', this.handleResize)
+   
     this.setState({
           topMargin: window.innerHeight + 50,
           widthMargin: window.innerWidth

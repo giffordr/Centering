@@ -23,7 +23,7 @@ render() {
     <div className="App"> 
       <p>
        <Box sx={{maxWidth:900}} alignItems="center" justifyContent="center" m='auto'>
-      <Typography variant="h4" align="center">As the project progresses, a gallery view of the installation, and participants interacting with it, will be posted here.</Typography>
+      <Typography variant="h5" align="center">As the project progresses, a gallery view of the installation, and participants interacting with it, will be posted here.</Typography>
        </Box>
       </p>
     </div>

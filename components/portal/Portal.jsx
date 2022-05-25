@@ -28,7 +28,7 @@ render() {
       <p>
        <Box sx={{maxWidth:900}} alignItems="center" justifyContent="center" m='auto'>
        <GameWeb/>
-      <Typography variant="h6" align="center">Add this web app to your mobile device, by pressing the share icon <IosShareIcon/>, and selecting "Add to Homescreen".
+      <Typography variant="h6" align="center">"Fullscreen" will not work on Safari. For a better experience on mobile, add this web app to your mobile device by pressing the share icon <IosShareIcon/>, and selecting "Add to Homescreen".
       This will allow this visualizer to run as native app on your device.</Typography>
        </Box>
       </p>

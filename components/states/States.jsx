@@ -18,6 +18,7 @@ import PeopleIcon from '@mui/icons-material/People';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import CollectionsIcon from '@mui/icons-material/Collections';
+import SmartphoneIcon from '@mui/icons-material/Smartphone';
 
 import {
   HashRouter, Route, Routes, Link, Switch,
@@ -28,6 +29,7 @@ import About from '../about/About';
 import Description from '../description/Description';
 import Gallery from '../gallery/Gallery';
 import Details from '../details/Details';
+import Portal from '../portal/Portal';
 
 
 /**
@@ -103,6 +105,7 @@ class States extends React.Component {
         <BottomNavigationAction label="Events" icon={<CalendarMonthIcon />} href='#events'/>
         <BottomNavigationAction label="About Us" icon={<PeopleIcon />} href='#about' />
         <BottomNavigationAction label="Gallery" icon={<CollectionsIcon />} href='#gallery' />
+        <BottomNavigationAction label="Portal" icon={<SmartphoneIcon />} href='#portal' />
       </BottomNavigation>
         </Paper>   
     </Box>
@@ -112,7 +115,8 @@ class States extends React.Component {
     <Route path="/events" component={Events} />
     <Route path="/about" component={About} />
     <Route path="/gallery" component={Gallery} />
-    <Route path="/details" component={Details} /> 
+    <Route path="/details" component={Details} />
+    <Route path="/portal" component={Portal} /> 
     <Route path="/" component={Description} />
     </Switch>
 </HashRouter>

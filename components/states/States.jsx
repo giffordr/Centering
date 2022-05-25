@@ -101,11 +101,11 @@ class States extends React.Component {
       <Box sx={{ width: 1 }}>
         <Paper elevation={3}>
       <BottomNavigation value={this.state.buttonWasClicked} onChange={(event, newValue) => this.handleButtonClick(newValue, event)}>
-        <BottomNavigationAction alignItems="center" justifyContent="center" m='auto' label="Description" icon={<InfoIcon />} href='#description'> </BottomNavigationAction>
-        <BottomNavigationAction alignItems="center" justifyContent="center" m='auto' label="Events" icon={<CalendarMonthIcon />} href='#events'/>
-        <BottomNavigationAction alignItems="center" justifyContent="center" m='auto' label="About Us" icon={<PeopleIcon />} href='#about' />
-        <BottomNavigationAction alignItems="center" justifyContent="center" m='auto' label="Gallery" icon={<CollectionsIcon />} href='#gallery' />
-        <BottomNavigationAction alignItems="center" justifyContent="center" m='auto' label="Portal" icon={<SmartphoneIcon />} href='#portal' />
+        <BottomNavigationAction label="Description" icon={<InfoIcon />} href='#description'> </BottomNavigationAction>
+        <BottomNavigationAction label="Events" icon={<CalendarMonthIcon />} href='#events'/>
+        <BottomNavigationAction label="About" icon={<PeopleIcon />} href='#about' />
+        <BottomNavigationAction label="Gallery" icon={<CollectionsIcon />} href='#gallery' />
+        <BottomNavigationAction label="Portal" icon={<SmartphoneIcon />} href='#portal' />
       </BottomNavigation>
         </Paper>   
     </Box>

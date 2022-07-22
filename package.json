@@ -1,15 +1,15 @@
 {
-  "name": "centering",
+  "name": "Taylor Sullivan Bows",
   "version": "1.0.0",
   "private": true,
-  "description": "Centering Web App",
+  "description": "Website for Taylor Sullivan Bows",
   "main": "webServer.js",
   "scripts": {
     "build": "webpack --devtool eval-cheap-module-source-map --output-pathinfo",
     "build:w": "webpack --devtool eval-cheap-module-source-map --output-pathinfo --watch",
     "lint": "eslint *.jsx components/*/*.jsx || exit 0"
   },
-  "author": "Mendel Rosenblum <mendel@cs.stanford.edu> ",
+  "author": "Ray Gifford <giffordr@alumni.stanford.edu> ",
   "license": "ISC",
   "dependencies": {
     "@babel/plugin-syntax-jsx": "^7.16.7",

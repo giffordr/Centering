@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule (.*) https://centeringinstalling.com/$1 [R=301,L]
+

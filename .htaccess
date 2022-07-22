@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond %{HTTP} off
+RewriteRule (.*) https://taylorsullivanbows.com/$1 [R=301,L]
